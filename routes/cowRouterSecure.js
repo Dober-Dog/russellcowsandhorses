@@ -3,7 +3,6 @@ const cowRouterSecure = express.Router()
 const Cow = require('../models/cow')
 const multer = require('multer')
 const { S3Client, PutObjectCommand, DeleteObjectCommand } = require('@aws-sdk/client-s3')
-const path = require('path')
 
 // Set up memory storage for multer
 const storage = multer.memoryStorage()
