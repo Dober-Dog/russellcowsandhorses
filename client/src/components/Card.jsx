@@ -102,7 +102,7 @@ export default function Card(props) {
                     />
                 </div>
             )}
-            <p>Registration Number: {props.registration}</p>
+            <p className='card-registration'>Registration Number: {props.registration}</p>
             {edit && (
                 <div>
                     <label htmlFor='registration'>Update Registration:</label>
@@ -114,7 +114,7 @@ export default function Card(props) {
                     />
                 </div>
             )}
-            <p>Gender: {props.gender}</p>
+            <p className='card-gender'>Gender: {props.gender}</p>
             {edit && (
                 <div>
                     <label htmlFor='gender'>Update Gender:</label>

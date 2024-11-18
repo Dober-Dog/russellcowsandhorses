@@ -80,7 +80,6 @@
 .horse-banner {
     background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/46e3d3_14558ce790af4c36a9d4bdcac79d86c1~mv2.webp');
     background-repeat: no-repeat;
-    height: 455px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -96,7 +95,8 @@
 
 .card {
     border: 2px solid black;
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     padding: 0px 20px;
     margin: 10px;
     background-color: #bd852a;
@@ -203,7 +203,6 @@
 .cow-banner {
     background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-01+165537.png');
     background-repeat: no-repeat;
-    height: 455px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -240,7 +239,6 @@
 .admin-banner {
     background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-01+165144.png');
     background-repeat: no-repeat;
-    height: 455px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -257,7 +255,6 @@
 .about-banner {
     background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-11+164239.png');
     background-repeat: no-repeat;
-    height: 455px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -358,4 +355,365 @@
 
 .about-contact > h2 {
     font-size: 150%;
+}
+
+@media only screen and (max-width: 800px){
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+    }
+    
+    .header > a {
+        margin-left: auto;
+        margin-right: 20px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .header > a:visited,
+    .header > a:active {
+      text-decoration: none;
+    }
+    
+    .header > a:hover {
+        text-decoration: underline;
+    }
+    
+    .header-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        justify-content: space-evenly;
+        justify-self: flex-end;
+    }
+    
+    .navbar > a {
+        color: goldenrod;
+    }
+    
+    .navbar > a:visited,
+    .navbar > a:active,
+    .navbar > a:hover {
+      text-decoration: none;
+    }
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title {
+        background-image: url('/silo.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .russell {
+        font-family: 'Pacifico', cursive;
+        font-size: 400%;
+        margin-bottom: 0px;
+    }
+    
+    .horses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .horse-banner {
+        background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/46e3d3_14558ce790af4c36a9d4bdcac79d86c1~mv2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 260%;
+        color: white;
+    }
+    
+    .card {
+        border: 2px solid black;
+        width: 80%;
+        padding: 0px 20px;
+        margin: 10px;
+        background-color: #bd852a;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .card > h1 {
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    .card > h2 {
+        margin-bottom: 0px;
+    }
+    
+    .card > p {
+        font-size: larger;
+        margin-bottom: 0px;
+        padding: 0px 5px;
+    }
+
+    .card-registration {
+        justify-self: end;
+    }
+    
+    .card > img {
+        width: fit-content;
+        height: 280px;
+        object-fit: cover;
+        justify-self: center;
+        border: 1px solid black;
+    }
+    
+    .card > button {
+        width: 25%;
+        justify-self: center;
+    }
+    
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 300px;
+        background-color: darkgoldenrod;
+    }
+      
+    .login-inputs {
+        margin-top: 35px;
+    }
+      
+    .login-inputs > label {
+        margin-right: 5px;
+    }
+      
+    .login-inputs > input {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+      
+    .login > button {
+        margin-top: 50px;
+        width: 100px;
+        height: 30px;
+        background-color: lightblue;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .admin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .admin-form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        align-items: flex-start;
+        padding: 10px;
+        background-color: whitesmoke;
+        margin-top: 20px;
+    }
+    
+    .cows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cow-banner {
+        background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-01+165537.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 260%;
+        color: white;
+    }
+    
+    .horseSort {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        background-color: gray;
+        padding: 5px 10px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin: 5px 0px;
+    }
+    
+    .horseSort > button {
+        width: 80px;
+        border-radius: 5px;
+    }
+    
+    .horseSort > label {
+        font-size: large;
+    }
+    
+    .admin-banner {
+        background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-01+165144.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 260%;
+        color: white;
+    }
+    
+    .about-banner {
+        background-image: url('https://russellcowsandhorses.s3.us-east-2.amazonaws.com/general/Screenshot+2024-10-11+164239.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 260%;
+        color: white;
+    }
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .home-horses {
+        margin-bottom: 50px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-horses > a {
+        color: black;
+        font-size: x-large;
+    }
+    
+    .home-horses > a:visited,
+    .home-horses > a:active,
+    .home-horses > a:hover {
+      text-decoration: none;
+    }
+    
+    .home-horses > span {
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: large;
+    }
+    
+    .home-cows {
+        margin-bottom: 50px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-cows > span {
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: large;
+    }
+    
+    .home-cows > a {
+        color: black;
+        font-size: x-large;
+    }
+    
+    .home-cows > a:visited,
+    .home-cows > a:active,
+    .home-cows > a:hover {
+      text-decoration: none;
+    }
+    
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .home-about > h2 {
+        font-size: 200%;
+    }
+    
+    .home-about > p {
+        font-size: larger;
+        text-align: center;
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about > h2 {
+        align-self: center;
+        font-size: 200%;
+    }
+    
+    .about-contact {
+        margin-left: 20px;
+    }
+    
+    .about-contact > h2 {
+        font-size: 150%;
+    }
 }
